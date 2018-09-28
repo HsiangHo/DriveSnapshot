@@ -317,6 +317,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
 				INFOPLIST_FILE = DriveSnapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.DriveSnapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +333,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Output";
 				INFOPLIST_FILE = DriveSnapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.DriveSnapshot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
