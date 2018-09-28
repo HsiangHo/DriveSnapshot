@@ -11,7 +11,18 @@
 		982F9527215DE6A400209DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982F9526215DE6A400209DFA /* Assets.xcassets */; };
 		982F952A215DE6A400209DFA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 982F9528215DE6A400209DFA /* MainMenu.xib */; };
 		982F952D215DE6A400209DFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982F952C215DE6A400209DFA /* main.m */; };
+		982F953B215DE96300209DFA /* ShadowstarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982F9539215DE95200209DFA /* ShadowstarKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		982F9538215DE95200209DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 982F9534215DE95200209DFA /* ShadowstarKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98804684205813D100E9E768;
+			remoteInfo = ShadowstarKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		982F9520215DE6A400209DFA /* DriveSnapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveSnapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,7 @@
 		982F952B215DE6A400209DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		982F952C215DE6A400209DFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		982F952E215DE6A400209DFA /* DriveSnapshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriveSnapshot.entitlements; sourceTree = "<group>"; };
+		982F9534215DE95200209DFA /* ShadowstarKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShadowstarKit.xcodeproj; path = ../ShadowstarKit/ShadowstarKit/ShadowstarKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982F953B215DE96300209DFA /* ShadowstarKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +51,10 @@
 		982F9517215DE6A400209DFA = {
 			isa = PBXGroup;
 			children = (
+				982F9534215DE95200209DFA /* ShadowstarKit.xcodeproj */,
 				982F9522215DE6A400209DFA /* DriveSnapshot */,
 				982F9521215DE6A400209DFA /* Products */,
+				982F953A215DE96300209DFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +78,21 @@
 				982F952E215DE6A400209DFA /* DriveSnapshot.entitlements */,
 			);
 			path = DriveSnapshot;
+			sourceTree = "<group>";
+		};
+		982F9535215DE95200209DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				982F9539215DE95200209DFA /* ShadowstarKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		982F953A215DE96300209DFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +146,28 @@
 			mainGroup = 982F9517215DE6A400209DFA;
 			productRefGroup = 982F9521215DE6A400209DFA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 982F9535215DE95200209DFA /* Products */;
+					ProjectRef = 982F9534215DE95200209DFA /* ShadowstarKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				982F951F215DE6A400209DFA /* DriveSnapshot */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		982F9539215DE95200209DFA /* ShadowstarKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShadowstarKit.framework;
+			remoteRef = 982F9538215DE95200209DFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		982F951E215DE6A400209DFA /* Resources */ = {
